@@ -1,0 +1,11 @@
+  applications:
+  - name: onlinecourse
+    routes:
+      - route: esz-onlinecourse.mybluemix.net
+    memory: 128M
+    buildpack: python_buildpack
+  - name: onlinecourse-nginx
+    routes:
+      - route: esz-onlinecourse.mybluemix.net/static
+    memory: 128M
+    buildpack: staticfile_buildpack
